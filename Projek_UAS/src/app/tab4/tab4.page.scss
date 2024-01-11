@@ -1,0 +1,39 @@
+
+.tbl-container {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+.tbl-container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 70vh;
+
+}
+
+table {
+    min-width: max-content;
+    border-collapse: collapse;
+}
+body {
+    background-color: #EEEEEE;
+}
+thead th {
+    background-color: #086a9b;
+    color: white;
+}
+
+tbody td {
+    background-color: #EEEEEE;
+    font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+    tbody td {
+        background-color: black;
+        color: #EEEEEE;
+        font-weight: bold;
+    }
+    body {
+        background-color: black;
+    }
+}

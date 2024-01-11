@@ -1,0 +1,34 @@
+ion-button{
+    font-weight: bold; --background:#086a9b;
+           --color: rgb(224, 224, 224);
+}
+ion-content{
+    --background:rgb(224, 224, 224);
+}
+h2{
+    color: rgb(35, 35, 35);
+        }
+ion-input{
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+ion-item{
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+@media (prefers-color-scheme: dark) {
+    ion-content{
+        --background:rgb(35, 35, 35);
+    }
+    h2{
+color: rgb(224, 224, 224);
+    }
+    ion-input{
+        background-color: rgb(35, 35, 35);
+        color: rgb(224, 224, 224);
+    }
+    ion-item{
+        background-color: rgb(35, 35, 35);
+        color: rgb(224, 224, 224);
+    }
+}

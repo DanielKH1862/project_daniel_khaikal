@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+  
+  <ion-list lines="none">
+    <ion-item color="#086a9bc0">
+      <ion-label color="light">Pendaftaran Calon Mahasiswa</ion-label>
+      <ion-avatar slot="end">
+        <img src="assets/—Pngtree—university logo_6950962.png" >
+      </ion-avatar>
+    </ion-item>
+  </ion-list>
+</ion-header>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-lZLK+MD6dzg8GCIhpGdWYwHPn7Lyf6M8Pd1PT7/NF3s0sXTFqcbB8P3jHe3Ac0Ap" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css"> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <ion-content [fullscreen]="true">
+  
+    
+    <ion-item>
+      <ion-input label="Nama Lengkap" placeholder="Nama Lengkap" [(ngModel)]="nama_lengkap" ></ion-input>
+    </ion-item>
+  
+  <ion-item>
+        <ion-select label="Jenis Kelamin" label-placement="stacked" placeholder="Pilih Jenis Kelamin" [(ngModel)]="jenis_kelamin">
+          <ion-select-option value="Pria">Pria</ion-select-option>
+          <ion-select-option value="Wanita">Wanita</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+       
+        <ion-item>
+      <ion-input label="No Handphone" placeholder="No Handphone" [(ngModel)]="no_handphone"></ion-input>
+    </ion-item>
+  
+    
+    <ion-item>
+      <ion-input label="E-mail" placeholder="E-mail" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  
+    
+    <ion-item>
+      <ion-input label="Asal Sekolah" placeholder="Asal Sekolah" [(ngModel)]="asal_sekolah"></ion-input>
+    </ion-item>
+  
+    <ion-item >
+    <ion-select label-placement="stacked" placeholder="Program Studi" [(ngModel)]="program_studi">
+      <ion-select-option value="Sistem Informasi">Sistem Informasi</ion-select-option>
+      <ion-select-option value="Teknik Informatika">Teknik Informatika</ion-select-option>
+      <ion-select-option value="Teknologi Informasi">Teknologi Informasi</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+    <ion-select label="Jenjang" label-placement="stacked" placeholder="Jenjang" [(ngModel)]="jenjang">
+      <ion-select-option value="S1">S1</ion-select-option>
+      <ion-select-option value="D3">D3</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+    <ion-select label="Kelas" label-placement="stacked" placeholder="Kelas" [(ngModel)]="kelas">
+      <ion-select-option value="Kelas A">Kelas A</ion-select-option>
+      <ion-select-option value="Kelas B">Kelas B</ion-select-option>
+      <ion-select-option value="Kelas C">Kelas C</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+    <ion-select label="info kampus" label-placement="stacked" placeholder="Info Kampus" [(ngModel)]="info_kampus">
+      <ion-select-option value="Mahasiswa">Mahasiswa</ion-select-option>
+      <ion-select-option value="Kampus">Kampus</ion-select-option>
+      <ion-select-option value="Teman">Teman</ion-select-option>
+      <ion-select-option value="Keluarga">Keluarga</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+    <ion-button style="--background:#086a9b; font-weight: bold;" expand="block" (click)="addData()">
+      Daftar
+    </ion-button>
